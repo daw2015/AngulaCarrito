@@ -1,0 +1,36 @@
+<button id="botonInsertarDialog"
+        type="button"
+        class="btn btn-info btn-lg"
+        data-toggle="modal"
+        data-target="#formularioInsertar">Insertar</button>
+<div class="modal fade modal-form" id="formularioInsertar" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="formInsertar"
+                ng-controller="ControladorFormulario as ctrlForm"
+                ng-submit="ctrlForm.addCiudad(cCiudad.ciudades)">
+                <div class="modal-header">
+                        Nombre
+                        <input type="text" id="Name" value="" ng-model="ctrlForm.ciudad.Name" /><hr>
+                        Pais
+                        <!--<input type="text" id="CountryCode" value="" ng-model="ctrlForm.ciudad.CountryCode" />-->
+                        <select ng-model="ctrlForm.ciudad.CountryCode">
+                            <option value="">&nbsp;</option>
+                            <option ng-repeat="pais in cCiudad.paises" value="{{pais.Code}}">{{pais.Name}}</option>
+                        </select><hr>
+                        Distrito
+                        <input type="text" id="District" value="" ng-model="ctrlForm.ciudad.District" /><hr>
+                        Poblacion
+                        <input type="number" id="Population" value="" ng-model="ctrlForm.ciudad.Population" /><hr>
+                        <input type="hidden" id="ID" value="" ng-model="ctrlForm.ciudad.ID" /><hr>
+
+                </div>
+                <div id="mensajeInsertar" ></div>
+                <div class="modal-footer">
+                    <button id="btInsertar" type="submit" class="btn btn-default" >Insert</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

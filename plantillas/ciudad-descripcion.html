@@ -1,0 +1,16 @@
+<div class="col-md-4">
+    <h4>{{ciudad.Name}}</h4>
+    <div>
+        {{
+        ciudad.ID + " " +
+        ciudad.CountryCode + " " +
+        ciudad.Population
+        }}
+        <!--<ul ng-repeat="barrio in ciudad.Barrios">
+            <li>Barrio: {{barrio}}</li>
+        </ul>-->
+        <a ng-click="cCiudad.editCiudad(ciudad)">editar</a>
+        <a ng-click="cCiudad.borrarCiudad(ciudad)">borrar</a>
+        <br/>
+        <a ng-click="cCiudad.agregarCarrito(ciudad)">agregar</a>
+</div>

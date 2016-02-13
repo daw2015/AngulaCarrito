@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #959595;
+}
+table tr:nth-child(odd) td {
+    background: #b2dba1;
+}
+table tr:nth-child(even) td {
+    background: #c9e2b3;
+}
+table tr td, table tr th {
+    padding: 2px;
+}
+
+.ocultar{
+    display:none;
+}

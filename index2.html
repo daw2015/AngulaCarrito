@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="mundo">
+    <head>
+        <title>angular</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </head>
+    <body>
+        <!--<h1>Angular.js</h1>
+        <div ng-init="valorA=12; valorB=13">
+            <input type="text" ng-model="valorA">
+            <input type="text" ng-model="valorB">
+            <p>{{valorA*valorB}}</p>
+        </div>
+        <div ng-controller="ControladorCiudad as cCiudad">
+            <h1>{{cCiudad.ciudades[1].Name}}</h1>
+        </div>
+        <hr>
+        <div ng-controller="ControladorCiudad as cCiudad">
+            <div ng-repeat="ciudad in cCiudad.ciudades">
+                <h1>{{ciudad.Name}}</h1>
+                <h2>
+                    {{
+                        ciudad.CountryCode + " " +
+                        ciudad.Population
+                    }}
+                </h2>
+                <ul ng-repeat="barrio in ciudad.Barrios">
+                    <li ng-show="ciudad.Population<200000">{{barrio}}</li>
+                </ul>
+            </div>
+            <!--<ul ng-repeat="barrio in cCiudad.ciudades[1].Barrios">
+                <li>{{barrio}}</li>
+            </ul>-->
+        <!--</div>
+        <hr/>-->
+        <!--<div ng-controller="ControladorCiudad as cCiudad">
+            <div ng-repeat="ciudad in cCiudad.ciudades">
+                <!--<div ng-include="'plantillas/ciudad-descripcion.html'"></div>-->
+                <!--<ciudad-descripcion></ciudad-descripcion>-->
+                <!--<ciudad></ciudad>
+            </div>
+            <!--<div ng-repeat="ciudad in cCiudad.ciudades">
+                <div ciudad-descripcion></div>
+            </div>-->
+        <!--</div>-->
+        
+        <!--<div ng-controller="ControladorCiudad as cCiudad">
+            <div ng-repeat="ciudad in cCiudad.ciudades">
+                <ciudad-descripcion></ciudad-descripcion>
+            </div>
+        </div>-->
+        <ciudades-listado></ciudades-listado>
+    </body>
+</html>

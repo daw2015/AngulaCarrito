@@ -1,0 +1,14 @@
+<div class="col-md-9">
+    <ciudad-insertar></ciudad-insertar>
+    <ciudad-editar></ciudad-editar>
+    <div ng-repeat="ciudad in cCiudad.ciudades">
+        <ciudad-descripcion></ciudad-descripcion>
+    </div>
+    <ciudad-paginar></ciudad-paginar>
+</div>
+<div class="col-md-3">
+    Carrito
+    <div ng-repeat="lineaCarrito in cCiudad.carrito">
+        <carrito-descripcion></carrito-descripcion>
+    </div>
+</div>
